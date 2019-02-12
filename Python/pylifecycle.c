@@ -2033,7 +2033,7 @@ exit:
 #if defined(MS_WINDOWS) && defined(_DEBUG)
         DebugBreak();
 #endif
-        abort();
+        exit(status);
     }
     else {
         exit(status);
